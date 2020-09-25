@@ -20,4 +20,9 @@ public class SavingsAccount extends Account {
 	public void updateBalance() {
 		balance += balance * interestRate;
 	}
+	
+	@Override  //@Override indica sobreposição de método
+	public void withDraw(double amount) {
+		balance -= amount;
+	}
 }
